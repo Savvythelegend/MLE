@@ -1,0 +1,172 @@
+when it comes to numpy :
+
+implemented in c lanuage and made for scientific computing , linear algebra , linear logistics, complex mathmatices ops we have numpy :
+
+	`1.backbone behind the pandas ,scikitlearn,tensorflow, k means clustring , deep neural networks etc.
+	 2.base of the numpy is nd array 
+	 3.since it's actual implemention is in the c lang that makes it much more faster that's what we have needed in terms of the speed in computing,
+		
+
+properties:
+
+1.element level operations allowed not in lists 
+eg. import numpy as np
+    a = np.array([10,20,30])
+    print(a+1) # [11,21,31]
+
+____________________________________________________________________________________________________________________________________________________________
+
+2. less memory consumed in numpy as compared to the list 
+
+import numpy
+import sys
+
+a = numpy.array([10,20,30,40,50,60,70,80,90,100])
+b = list(10,20,30,40,50,60,70,80,90,100)
+
+print(sys.getssizeof(a)) #168 in bytes
+print(sys.getssizeof(b)) #182 in bytes (roughly)
+
+____________________________________________________________________________________________________________________________________________________________
+
+
+3. numpy library reqiures several functions to create the ndarray based on the requirements of us. (for are mathmatical models) !
+ - array() #np.array()
+ - arange() #range is a python function but the arange is the numpy function
+ - zeros()
+ - ones()
+ - linspace()
+ - eye() 
+ - random()
+ etc. 
+
+____________________________________________________________________________________________________________________________________________________________
+
+import numpy as np
+
+# Create a 2D NumPy array
+arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[0,0,0]]])
+
+# Display the array
+print("Array:\n", arr)
+
+# Shape of the array (rows, columns)
+print("\nShape of the array:", arr.shape)
+
+# Total number of elements in the array
+print("Size of the array:", arr.size)
+
+# Data type of the array elements
+print("Data type of the array:", arr.dtype)
+
+# Size of each element in the array (in bytes)
+print("Size of each element:", arr.itemsize, "bytes")
+
+# Number of dimensions of the array
+print("Number of dimensions:", arr.ndim)
+
+# Accessing elements using flat iterator
+print("\nElements using flat:")
+for element in arr.flat:
+    print(element)
+
+# Transpose of the array (flips rows and columns)
+print("\nTranspose of the array:\n", arr.T)
+
+# Create a complex array
+complex_arr = np.array([1+2j, 3+4j])
+	
+# Display the complex array
+print("\nComplex Array:", complex_arr)
+
+# Real part of the complex array
+print("Real part:", complex_arr.real)
+
+# Imaginary part of the complex array
+print("Imaginary part:", complex_arr.imag)
+
+
+
+Explanation
+
+    Shape: Gives the dimensions (rows, columns) of the array.
+    Size: Total number of elements in the array.
+    Dtype: Data type of the array elements.
+    Itemsize: Size (in bytes) of each element.
+    Ndim: Number of dimensions of the array.
+    Flat: Provides an iterator over all elements.
+    T: Transposes the array (flips rows and columns).
+    Real & Imaginary: Access the real and imaginary parts of a complex array.
+
+
+
+
+### Important:
+________________________________________________________________________________________________________________________________________________
+
+what's the order of the shape of an array ?
+
+The order of the shape of an array in NumPy corresponds to its dimensions, listed from the outermost to the innermost. Specifically:
+
+    The first value in the shape tuple represents the size along the outermost (first) dimension.
+    The second value represents the size along the second dimension.
+    This continues for as many dimensions as the array has.
+
+Examples of the Order of shape:
+
+    1D Array:
+        Shape: (n,) where n is the number of elements.
+        Example:
+
+        python
+
+    arr = np.array([1, 2, 3])
+    print(arr.shape)  # Output: (3,)
+
+        The shape (3,) means there is 1 dimension with 3 elements.
+
+2D Array (Matrix):
+
+    Shape: (rows, columns)
+    Example:
+
+    python
+
+    arr = np.array([[1, 2, 3], [4, 5, 6]])
+    print(arr.shape)  # Output: (2, 3)
+
+        The shape (2, 3) means 2 rows and 3 columns.
+
+3D Array (Tensor):
+
+    Shape: (depth, rows, columns)
+    Example:
+
+    python
+
+        arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+        print(arr.shape)  # Output: (2, 2, 3)
+
+            The shape (2, 2, 3) means 2 blocks, each containing 2 rows and 3 columns.
+
+General Rule:
+
+    For a shape (a, b, c, ...):
+        a is the size of the first dimension.
+        b is the size of the second dimension.
+        c is the size of the third dimension, and so on.
+
+This order is important because it determines how the array is structured in memory and how you should index the array to access specific elements.
+
+
+
+
+________________________________________________________________________________________________________________________________________________
+import numpy as np
+
+# Creating a 4D array
+arr_4d = np.arange(1, 49).reshape(2, 3, 2, 4)
+print("4D Array:\n", arr_4d)
+print("Shape:", arr_4d.shape)  # Output: (2, 3, 2, 4)
+print("Number of dimensions (ndim):", arr_4d.ndim)  # Output: 4
+
