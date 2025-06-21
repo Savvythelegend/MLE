@@ -1,1 +1,1 @@
-# statistics
+# statistics and probability
