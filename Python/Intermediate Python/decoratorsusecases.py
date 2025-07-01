@@ -1,4 +1,4 @@
-"""import logging
+import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -16,9 +16,7 @@ def add(a, b):
 
 add(1, 2)
 
-"""
 
-"""
 import logging
 
 # Configure logging
@@ -42,6 +40,5 @@ def divide(a, b):
 divide(10, 2)
 divide(10, 0)
 
-"""
 
 
