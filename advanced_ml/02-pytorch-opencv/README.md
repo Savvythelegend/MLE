@@ -26,16 +26,6 @@ This directory focuses on **integrating PyTorch deep learning workflows with Ope
 ```
 
 ---
-
-## Learning Resources
-### Courses
-1. **[OpenCV PyTorch Course](https://opencv.org/university/free-pytorch-course/)**
-   - Covers PyTorch fundamentals and OpenCV integration.
-2. **[CampusX: Practical Deep Learning using PyTorch](https://www.youtube.com/watch?v=QZsguRbcOBM&list=PLKnIA16_Rmvboy8bmDCjwNHgTaYH2puK7)**
-   - Structured playlist for PyTorch beginners to advanced users.
-
----
-
 ## Roadmap
 ### CampusX Playlist Roadmap
 | **Video #** | **Topic**                                      | **Status**       | **Directory**               |
