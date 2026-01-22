@@ -34,10 +34,10 @@ This directory focuses on **integrating PyTorch deep learning workflows with Ope
 | 2           | Tensors in PyTorch                             | Done             | `2.tensors/`                |
 | 3           | PyTorch Autograd                               | Done             | `3.autograd/`               |
 | 4           | PyTorch Training Pipeline                      | Done             | `4.training-pipeline/`      |
-| 5           | PyTorch NN Module                              | To-Do            | `5.nn-module/` (Upcoming)   |
-| 6           | Dataset & DataLoader Class in PyTorch          | To-Do            | `6.dataloader/` (Upcoming)  |
-| 7           | Building an ANN using PyTorch                  | To-Do            | `7.ann/` (Upcoming)         |
-| 8           | Neural Network Training on GPU                | To-Do            | `8.gpu-training/` (Upcoming)|
+| 5           | PyTorch NN Module                              | Done           | `5.nn-module/` (Upcoming)   |
+| 6           | Dataset & DataLoader Class in PyTorch          | Done          | `6.dataloader/` (Upcoming)  |
+| 7           | Building an ANN using PyTorch                  | Done            | `7.ann/` (Upcoming)         |
+| 8           | Neural Network Training on GPU                | Done            | `8.gpu-training/` (Upcoming)|
 | 9           | Optimizing the Neural Network                 | To-Do            | `9.optimization/` (Upcoming)|
 | 10          | Hyperparameter Tuning with Optuna              | To-Do            | `10.hyperparameter-tuning/` |
 | 11          | Building a CNN using PyTorch                  | To-Do            | `11.cnn/` (Upcoming)        |
